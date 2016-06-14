@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04905F421D10650300DD2535 /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 04905F411D10650300DD2535 /* tweet.json */; };
-		04905F441D10951F00DD2535 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04905F431D10951F00DD2535 /* ViewController.swift */; };
 		04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B308771D0F4F4D006CD89A /* JSONParser.swift */; };
 		04B3087B1D0FA6D1006CD89A /* ReverseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */; };
 		04DD3F161D0F49C400E07D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD3F151D0F49C400E07D7B /* AppDelegate.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		04905F411D10650300DD2535 /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tweet.json; path = ../../../../../Downloads/TWTR/TWTR/tweet.json; sourceTree = "<group>"; };
-		04905F431D10951F00DD2535 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../ViewController.swift; sourceTree = "<group>"; };
 		04B308771D0F4F4D006CD89A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = ../JSONParser.swift; sourceTree = "<group>"; };
 		04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseArray.swift; sourceTree = "<group>"; };
 		04DD3F121D0F49C400E07D7B /* TWTR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWTR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				04DD3F171D0F49C400E07D7B /* ViewController.swift */,
-				04905F431D10951F00DD2535 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -200,7 +197,6 @@
 				04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */,
 				04DD3F2B1D0F4A9200E07D7B /* Tweet.swift in Sources */,
 				04DD3F181D0F49C400E07D7B /* ViewController.swift in Sources */,
-				04905F441D10951F00DD2535 /* ViewController.swift in Sources */,
 				04B3087B1D0FA6D1006CD89A /* ReverseArray.swift in Sources */,
 				04DD3F161D0F49C400E07D7B /* AppDelegate.swift in Sources */,
 			);
