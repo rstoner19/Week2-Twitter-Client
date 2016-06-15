@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Identity {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +20,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "TWTR"
+        func setupTableView() {
+            self.tableView.estimatedRowHeight = 100
+            self.tableView.rowHeight = UITableViewAutomaticDimension
+        }
+        
     }
+    
+    
     
     override func viewWillAppear(animated: Bool)
     {
@@ -49,6 +58,14 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == DetailedViewController.id() {
+            guard let detailedViewController = segue.destinationViewController as? DetailedViewController else { return }
+            guard let indexPath = self.tableView.indexPathForSelectedRow else { return }
+            detailedViewController.tweet = self.datasource[indexPath.row]
+        }
     }
 
 }
