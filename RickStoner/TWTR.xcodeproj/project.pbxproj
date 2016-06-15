@@ -10,6 +10,7 @@
 		0477492C1D10983200EC92D7 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477492B1D10983200EC92D7 /* API.swift */; };
 		048B26E31D11F0BE00103E75 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E21D11F0BE00103E75 /* DetailedViewController.swift */; };
 		048B26E71D11F43200103E75 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E61D11F43200103E75 /* Identity.swift */; };
+		048B26E91D11FE1600103E75 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E81D11FE1600103E75 /* ProfileViewController.swift */; };
 		04905F421D10650300DD2535 /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 04905F411D10650300DD2535 /* tweet.json */; };
 		04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B308771D0F4F4D006CD89A /* JSONParser.swift */; };
 		04B3087B1D0FA6D1006CD89A /* ReverseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */; };
@@ -26,6 +27,7 @@
 		0477492B1D10983200EC92D7 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		048B26E21D11F0BE00103E75 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		048B26E61D11F43200103E75 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		048B26E81D11FE1600103E75 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04905F411D10650300DD2535 /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tweet.json; path = ../../../../../Downloads/TWTR/TWTR/tweet.json; sourceTree = "<group>"; };
 		04B308771D0F4F4D006CD89A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = ../JSONParser.swift; sourceTree = "<group>"; };
 		04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseArray.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				04DD3F171D0F49C400E07D7B /* ViewController.swift */,
 				048B26E21D11F0BE00103E75 /* DetailedViewController.swift */,
+				048B26E81D11FE1600103E75 /* ProfileViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				04DD3F2D1D0F4A9C00E07D7B /* User.swift in Sources */,
 				048B26E71D11F43200103E75 /* Identity.swift in Sources */,
+				048B26E91D11FE1600103E75 /* ProfileViewController.swift in Sources */,
 				04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */,
 				048B26E31D11F0BE00103E75 /* DetailedViewController.swift in Sources */,
 				04DD3F2B1D0F4A9200E07D7B /* Tweet.swift in Sources */,

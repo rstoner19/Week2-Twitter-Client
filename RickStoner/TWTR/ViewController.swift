@@ -49,7 +49,7 @@ class ViewController: UIViewController, Identity {
     func update(){
     
         API.shared.getTweets { (tweets) in
-            if let tweets = tweets{
+            if let tweets = tweets {
                 self.datasource = tweets
             }
         }
