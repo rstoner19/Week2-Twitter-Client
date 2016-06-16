@@ -11,6 +11,9 @@
 		048B26E31D11F0BE00103E75 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E21D11F0BE00103E75 /* DetailedViewController.swift */; };
 		048B26E71D11F43200103E75 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E61D11F43200103E75 /* Identity.swift */; };
 		048B26E91D11FE1600103E75 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26E81D11FE1600103E75 /* ProfileViewController.swift */; };
+		048B26EB1D133DE100103E75 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26EA1D133DE100103E75 /* Cache.swift */; };
+		048B26ED1D1344F500103E75 /* TweetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048B26EC1D1344F500103E75 /* TweetCell.xib */; };
+		048B26EF1D1348C700103E75 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B26EE1D1348C700103E75 /* TweetCell.swift */; };
 		04905F421D10650300DD2535 /* tweet.json in Resources */ = {isa = PBXBuildFile; fileRef = 04905F411D10650300DD2535 /* tweet.json */; };
 		04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B308771D0F4F4D006CD89A /* JSONParser.swift */; };
 		04B3087B1D0FA6D1006CD89A /* ReverseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */; };
@@ -28,6 +31,9 @@
 		048B26E21D11F0BE00103E75 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		048B26E61D11F43200103E75 /* Identity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
 		048B26E81D11FE1600103E75 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		048B26EA1D133DE100103E75 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		048B26EC1D1344F500103E75 /* TweetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCell.xib; sourceTree = "<group>"; };
+		048B26EE1D1348C700103E75 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		04905F411D10650300DD2535 /* tweet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tweet.json; path = ../../../../../Downloads/TWTR/TWTR/tweet.json; sourceTree = "<group>"; };
 		04B308771D0F4F4D006CD89A /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = ../JSONParser.swift; sourceTree = "<group>"; };
 		04B3087A1D0FA6D1006CD89A /* ReverseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseArray.swift; sourceTree = "<group>"; };
@@ -93,9 +99,10 @@
 		04DD3F271D0F4A2B00E07D7B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				04DD3F171D0F49C400E07D7B /* ViewController.swift */,
 				048B26E21D11F0BE00103E75 /* DetailedViewController.swift */,
 				048B26E81D11FE1600103E75 /* ProfileViewController.swift */,
+				048B26EE1D1348C700103E75 /* TweetCell.swift */,
+				04DD3F171D0F49C400E07D7B /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -103,6 +110,7 @@
 		04DD3F281D0F4A3B00E07D7B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				048B26EC1D1344F500103E75 /* TweetCell.xib */,
 				04DD3F191D0F49C400E07D7B /* Main.storyboard */,
 				04DD3F1C1D0F49C400E07D7B /* Assets.xcassets */,
 				04DD3F1E1D0F49C400E07D7B /* LaunchScreen.storyboard */,
@@ -115,6 +123,7 @@
 			children = (
 				04905F411D10650300DD2535 /* tweet.json */,
 				04DD3F151D0F49C400E07D7B /* AppDelegate.swift */,
+				048B26EA1D133DE100103E75 /* Cache.swift */,
 				04DD3F211D0F49C400E07D7B /* Info.plist */,
 			);
 			name = "App Global";
@@ -192,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04905F421D10650300DD2535 /* tweet.json in Resources */,
+				048B26ED1D1344F500103E75 /* TweetCell.xib in Resources */,
 				04DD3F201D0F49C400E07D7B /* LaunchScreen.storyboard in Resources */,
 				04DD3F1D1D0F49C400E07D7B /* Assets.xcassets in Resources */,
 				04DD3F1B1D0F49C400E07D7B /* Main.storyboard in Resources */,
@@ -208,7 +218,9 @@
 				04DD3F2D1D0F4A9C00E07D7B /* User.swift in Sources */,
 				048B26E71D11F43200103E75 /* Identity.swift in Sources */,
 				048B26E91D11FE1600103E75 /* ProfileViewController.swift in Sources */,
+				048B26EF1D1348C700103E75 /* TweetCell.swift in Sources */,
 				04B308781D0F4F4D006CD89A /* JSONParser.swift in Sources */,
+				048B26EB1D133DE100103E75 /* Cache.swift in Sources */,
 				048B26E31D11F0BE00103E75 /* DetailedViewController.swift in Sources */,
 				04DD3F2B1D0F4A9200E07D7B /* Tweet.swift in Sources */,
 				04DD3F181D0F49C400E07D7B /* ViewController.swift in Sources */,
