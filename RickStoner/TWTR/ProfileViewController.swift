@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController, Identity {
                     guard let image = NSURL(string: user.profileImageUrl) else { return }
                     guard let imgData = NSData(contentsOfURL: image) else { return }
                     NSOperationQueue.mainQueue().addOperationWithBlock({
-                        self.userImage.layer.cornerRadius = 4
+                        self.userImage.layer.cornerRadius = 50
                         self.userImage.image = UIImage(data: imgData)
                     })
                     
