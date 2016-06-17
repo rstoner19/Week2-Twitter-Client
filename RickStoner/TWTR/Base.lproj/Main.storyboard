@@ -160,11 +160,32 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m2r-co-Thy">
+                                <rect key="frame" x="225" y="89" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3Cs-oC-4tJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="iab-EJ-8fn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghm-Yp-p0X">
+                                <rect key="frame" x="225" y="89" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="O6R-BH-utf"/>
+                                    <constraint firstAttribute="height" constant="150" id="WrH-c2-xWm"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="5Lm-y2-A71" kind="show" identifier="UserTimelineViewController" id="aHH-s7-1ef"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9XA-Ht-8oE" firstAttribute="top" secondItem="m2r-co-Thy" secondAttribute="bottom" constant="50" id="0KD-7a-f3w"/>
                             <constraint firstItem="9XA-Ht-8oE" firstAttribute="centerY" secondItem="b5A-fl-7jg" secondAttribute="centerY" id="XlL-GU-kly"/>
+                            <constraint firstItem="m2r-co-Thy" firstAttribute="centerX" secondItem="b5A-fl-7jg" secondAttribute="centerX" id="dWT-qd-Bqf"/>
                             <constraint firstItem="R6y-wk-uZK" firstAttribute="centerX" secondItem="b5A-fl-7jg" secondAttribute="centerX" id="kpe-vh-p7a"/>
+                            <constraint firstItem="ghm-Yp-p0X" firstAttribute="centerX" secondItem="m2r-co-Thy" secondAttribute="centerX" id="leB-PE-2bi"/>
+                            <constraint firstItem="ghm-Yp-p0X" firstAttribute="centerY" secondItem="m2r-co-Thy" secondAttribute="centerY" id="pFB-3j-e1q"/>
                             <constraint firstItem="9XA-Ht-8oE" firstAttribute="centerX" secondItem="b5A-fl-7jg" secondAttribute="centerX" id="rY5-69-qpf"/>
                             <constraint firstItem="9XA-Ht-8oE" firstAttribute="trailing" secondItem="b5A-fl-7jg" secondAttribute="trailingMargin" id="sas-TR-uQT"/>
                             <constraint firstItem="9XA-Ht-8oE" firstAttribute="leading" secondItem="b5A-fl-7jg" secondAttribute="leadingMargin" id="t01-uj-7SD"/>
@@ -177,6 +198,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="profileImageView" destination="m2r-co-Thy" id="u7o-kv-Pra"/>
                         <outlet property="tweetLabel" destination="9XA-Ht-8oE" id="FOg-fk-BZX"/>
                         <outlet property="userLabel" destination="R6y-wk-uZK" id="6AE-kI-kba"/>
                     </connections>
@@ -184,6 +206,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sxa-sq-Qop" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1825" y="387"/>
+        </scene>
+        <!--User Time Line View Controller-->
+        <scene sceneID="DJG-dA-nTp">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="5Lm-y2-A71" customClass="UserTimeLineViewController" customModule="TWTR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yVM-hA-ATB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngV-6o-rBk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iDn-Mk-NSh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nmc-pM-QOi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nmc-pM-QOi" secondAttribute="trailing" id="ARU-4K-Pns"/>
+                            <constraint firstItem="ngV-6o-rBk" firstAttribute="top" secondItem="nmc-pM-QOi" secondAttribute="bottom" id="BnC-cP-oJR"/>
+                            <constraint firstItem="nmc-pM-QOi" firstAttribute="top" secondItem="iDn-Mk-NSh" secondAttribute="top" id="hwa-6s-VP2"/>
+                            <constraint firstItem="nmc-pM-QOi" firstAttribute="leading" secondItem="iDn-Mk-NSh" secondAttribute="leading" id="tQA-Ig-nYc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nmc-pM-QOi" id="lf8-9M-Ukw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2KJ-kx-9A8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2543" y="387"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ou4-Xl-4xr">
